@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Online Form</title>
+<link rel="stylesheet" type="text/css" href="style.css" />
+<script src="script.js"></script> 
+</head>
+<body>
+<div class="container">
+    <h3>REGISTRATION FORM</h3>
+    <form action="/action_page.php">
+<b>
+<fieldset>
+    <legend>PERSONAL INFO:</legend><br><br>
+	<label for = "fname">First name:</label>&nbsp;&nbsp;&nbsp;
+	<input type="text" id="fname" name="fname" placeholder="first name" required> &nbsp;&nbsp;&nbsp;
+	<label for = "lname">Last name:</label>&nbsp;&nbsp;&nbsp;
+	<input type="text" id="lname" name="lname" placeholder="last name" required><br><br><br>
+	
+	<label for="dob">DOB:</label><br><br>
+    <input type="date" id="dob" name="dob" required><br><br><br>
+
+	<label for = "email">E-Mail id :</label><br><br>
+	<input type="email" id="email" name="email" placeholder="abc@gmail.com" required ><br><br><br>
+	
+	<label for = "gender">Gender :</label><br><br>
+	<input type="radio" id="male" name="gender" value="Male">
+	<label for = "Male">Male</label><br>
+	<input type="radio" id="female" name="gender" value="Female">
+	<label for = "Female">Female</label><br><br><br>
+	</fieldset>
+	<br><br>
+	<fieldset>
+	<legend> EDUCATIONAL QUALIFICATION :</legend> <br><br>
+	<label for = "lang">Language :</label><br><br>
+	<input type="checkbox" id="html" name="lang" value="html">
+	<label for = "html">Html</label><br>
+	<input type="checkbox" id="python" name="lang" value="python">
+	<label for = "python">Python</label><br>
+	<input type="checkbox" id="java" name="lang" value="java">
+	<label for = "java">java</label><br><br><br>
+
+
+	<label for="course">Select a course:</label><br><br>
+    <select id="course" name="course" required>
+    <option value="web development">Web development</option>
+    <option value="app development">App development</option>
+    <option value="ar">Augment reality</option>
+    <option value="iot">Iot</option>
+	<option value="ar" selected>Augment reality</option>
+    </select><br><br><br>
+	
+	<label for="myfile">Select your resume :</label>
+    <input type="file" id="myfile" name="myfile" required><br><br><br>
+
+	<center>
+        <input type="button" value="Submit" onclick="submitForm()">
+    </center>
+</fieldset>
+
+</form>
+<br><br>
+<fieldset>
+    <legend>DATA ENTRIES:</legend>
+    <table id="table" border="1">
+        <thead>
+            <tr>
+                <th>First name</th>
+                <th>Last name</th>
+                <th>DOB</th>
+                <th>E-Mail</th>
+                <th>Gender</th>
+                <th>Language</th>
+                <th>course</th>
+                <th>Resume</th>
+            </tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+</fieldset>
+
+    <center><h3>THANK YOU ;)</h3></center>
+</div>
+</body>
+</html>
